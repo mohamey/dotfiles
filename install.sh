@@ -48,3 +48,13 @@ mv ~/.fonts ~/.oldFonts
 echo "Creating symlink for fonts"
 ln -s $dir/fonts/ ~/.fonts
 echo "Done"
+
+# Add GPM Script for now playing in i3Blocks
+echo "Backing up existing script"
+mkdir -p ~/Documents/oldi3Blocks
+mv ~/Documents/i3blocks/ ~/Documents/oldi3Blocks/
+echo "Creating directory ~/Documents/i3blocks for GPM script"
+mkdir -p ~/Documents/i3blocks
+echo "Adding Script to directory"
+ln -s $dir/playing.py ~/Documents/i3blocks/
+echo "Done"
