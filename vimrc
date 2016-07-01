@@ -17,6 +17,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'troydm/easybuffer.vim'
 
 Plug 'ntpeters/vim-better-whitespace'
+
+" Syntastic
+Plug 'scrooloose/syntastic'
+
+" Nerd Tree
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 set tabstop=4
@@ -55,8 +61,36 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 set laststatus=2
 
+" Syntastic config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Peters whitespace shite
 highlight ExtraWhitespace ctermbg = red
+" Nerdtree Config
+" autocmd vimenter * NERDTree
+" Auto open Nerdtree
+" autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Change Vim Split behaviour
+set splitbelow
+set splitright
+
+" Nerd Tree toggle
+nnoremap <Leader>NT :NERDTreeToggle<CR>
+
+" Map split navigations
+nnoremap <C-j> <C-W><C-J>
+nnoremap <C-k> <C-W><C-K>
+nnoremap <C-h> <C-W><C-H>
+nnoremap <C-l> <C-W><C-l>
+
 " Map control P to fuzzy file search"
 nnoremap <C-p> :FZF<CR>
 
