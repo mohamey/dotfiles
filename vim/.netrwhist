@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/yasir/Documents/easyreader/src/changebase'
+let g:netrw_dirhist_2='/home/yasir/.zprezto'
+let g:netrw_dirhist_3='/home/yasir/Documents/SeleniumStuff/firefox-profile-js'
+let g:netrw_dirhist_4='/home/yasir/.zprezto'

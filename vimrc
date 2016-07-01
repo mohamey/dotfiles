@@ -31,7 +31,7 @@ let base16colorspace=256
 " Background
 set background=dark
 
-colorscheme base16-google-dark
+colorscheme base16-solarized-dark
 
 " Solarized theme for vim airline
 let g:solarized_base16 = 1
