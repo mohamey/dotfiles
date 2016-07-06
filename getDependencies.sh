@@ -1,4 +1,4 @@
-packages="i3 i3blocks vim compton rofi feh arc-theme zsh thunar lxappearance moka-icon-theme"
+packages="i3 i3blocks vim compton rofi feh arc-theme zsh thunar lxappearance moka-icon-theme python2.7 git python-pip"
 
 # Arc Dark theme setup
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
@@ -31,4 +31,4 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$H
 git pull && git submodule update --init --recursive
 
 # Remove Nautilus
-# sudo apt-get remove nautilus
+sudo apt-get remove nautilus
