@@ -58,3 +58,12 @@ mkdir -p ~/Documents/i3blocks
 echo "Adding Script to directory"
 ln -s $dir/playing.py ~/Documents/i3blocks/
 echo "Done"
+
+# Move improved battery script
+sudo rm -rf /usr/share/i3blocks/battery
+ln -s $dir/battery /usr/share/i3blocks/
+
+# Add Wallpaper
+mkdir -p ~/Pictures/Wallpaper
+cp $dir/wallpaper ~/Pictures/Wallpapers/ksp.jpeg
+
