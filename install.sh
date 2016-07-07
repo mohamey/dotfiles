@@ -65,7 +65,7 @@ ln -s $dir/battery /usr/share/i3blocks/
 
 # Add Wallpaper
 mkdir -p ~/Pictures/Wallpaper
-cp $dir/wallpaper ~/Pictures/Wallpapers/ksp.jpeg
+cp $dir/wallpaper ~/Pictures/Wallpapers/ksp.jpg
 
 # Install powerline fonts
 wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
