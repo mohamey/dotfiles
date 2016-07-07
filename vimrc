@@ -1,13 +1,22 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+
+" Syntastic
+Plug 'scrooloose/syntastic'
 
 " vim base 16
 Plug 'chriskempson/base16-vim'
 
 " git diff in gutter
 Plug 'airblade/vim-gitgutter'
+
+" Nerd Tree
+Plug 'scrooloose/nerdtree'
+
+" Whitespace Highlight
+Plug 'ntpeters/vim-better-whitespace'
 
 " Vim airline
 Plug 'vim-airline/vim-airline'
@@ -16,13 +25,11 @@ Plug 'vim-airline/vim-airline-themes'
 " Easy buffer
 Plug 'troydm/easybuffer.vim'
 
-Plug 'ntpeters/vim-better-whitespace'
+"Plug 'ntpeters/vim-better-whitespace'
 
-" Syntastic
-Plug 'scrooloose/syntastic'
 
 " Nerd Tree
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 call plug#end()
 
 set tabstop=4
@@ -58,7 +65,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Vim airline themes
 let g:airline_powerline_fonts = 1
 
-let g:airline_theme='solarized'
+"let g:airline_theme='solarized'
 set laststatus=2
 
 " Syntastic config
