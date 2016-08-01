@@ -25,11 +25,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Easy buffer
 Plug 'troydm/easybuffer.vim'
 
-"Plug 'ntpeters/vim-better-whitespace'
+" tcomment
+Plug 'tomtom/tcomment_vim'
 
-
-" Nerd Tree
-"Plug 'scrooloose/nerdtree'
 call plug#end()
 
 set tabstop=4
