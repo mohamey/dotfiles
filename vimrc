@@ -23,6 +23,9 @@ Plug 'scrooloose/syntastic'
 
 " Nerd Tree
 Plug 'scrooloose/nerdtree'
+
+" Vim Commentary
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 set tabstop=4
@@ -156,3 +159,8 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+" Vim stuffsie Stuffs
+set noswapfile
+set nobackup
+set nowritebackup
