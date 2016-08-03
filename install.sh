@@ -59,12 +59,17 @@ echo "Adding Script to directory"
 ln -s $dir/playing.py ~/Documents/i3blocks/
 echo "Done"
 
+# Move improved battery script
+sudo rm -rf /usr/share/i3blocks/battery
+ln -s $dir/battery /usr/share/i3blocks/
+
+# Add Wallpaper
+mkdir -p ~/Pictures/Wallpapers
+cp $dir/ksp.jpg ~/Pictures/Wallpapers/ksp.jpg
+
 # Install powerline fonts
 wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
 fc-cache -vf ~/.fonts
 mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
-
-echo "Creating directory ~/Documents/i3blocks for GPM script"
-mkdir -p ~/Documents/i3blocks
 
