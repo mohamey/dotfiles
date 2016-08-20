@@ -213,6 +213,7 @@ exec_always compton --vsync opengl
 exec_always alias insta='sudo apt-get install' upd8='sudo apt-get update' remove='sudo apt-get remove'
 exec_always syndaemon -i 0.5 -K -d
 exec_always sudo tlp start
+exec_always xss-lock -- gnome-screensaver-command -l
 
 
 #Remove window borders
