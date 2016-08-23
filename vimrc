@@ -37,6 +37,8 @@ set shiftwidth=4
 set expandtab
 set ai
 set number
+set scrolloff=15
+set sidescrolloff=15
 
 set t_Co=256
 let base16colorspace=256

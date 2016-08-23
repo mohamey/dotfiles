@@ -208,7 +208,7 @@ bindsym XF86KbdBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # Startup applications
-exec_always feh --bg-scale ~/Pictures/Wallpapers/ksp.jpg
+exec_always python3 ~/Documents/scripts/dynamic-backgrounds.py -t 15 /home/yasir/Pictures/Wallpapers
 exec_always compton --vsync opengl
 exec_always alias insta='sudo apt-get install' upd8='sudo apt-get update' remove='sudo apt-get remove'
 exec_always syndaemon -i 0.5 -K -d
