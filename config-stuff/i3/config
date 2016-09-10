@@ -204,7 +204,7 @@ bindsym F11 exec playerctl next
 bindsym F9 exec playerctl previous
 
 # Startup applications
-exec_always feh --bg-scale ~/Pictures/Wallpapers/ksp.jpg
+exec_always python3 ~/Documents/i3-dynamic-backgrounds/main.py ~/Pictures/Wallpapers
 exec_always compton -f
 exec_always alias insta='sudo apt-get install' upd8='sudo apt-get update' remove='sudo apt-get remove'
 
