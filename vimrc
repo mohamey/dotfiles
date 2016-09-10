@@ -172,3 +172,6 @@ let g:airline_symbols.linenr = ''
 set noswapfile
 set nobackup
 set nowritebackup
+
+" Enable Deoplete at startup
+let g:deoplete#enable_at_startup = 1
