@@ -35,3 +35,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-solarized-dark.sh"
 if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
+
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias add="sudo apt-add-repository"
+alias purge="sudo apt-get purge"
+alias update="sudo apt-get update"
+alias vim="nvim"
