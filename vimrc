@@ -30,6 +30,10 @@ Plug 'tomtom/tcomment_vim'
 
 " Vim Commentary
 Plug 'tpope/vim-commentary'
+
+" Deoplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 call plug#end()
 
 set tabstop=4
