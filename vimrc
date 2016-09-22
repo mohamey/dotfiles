@@ -37,6 +37,12 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Javascript syntax
 Plug 'pangloss/vim-javascript'
 
+" Auto pairs
+Plug 'jiangmiao/auto-pairs'
+
+" Vim Surround
+Plug 'tpope/vim-surround'
+
 call plug#end()
 
 set tabstop=4
@@ -58,6 +64,7 @@ colorscheme base16-solarized-dark
 
 " Solarized theme for vim airline
 let g:solarized_base16 = 1
+let g:javascript_plugin_jsdoc = 1
 
 " This is the default extra key bindings
 let g:fzf_action = {
