@@ -34,6 +34,9 @@ Plug 'tpope/vim-commentary'
 " Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
+" Javascript syntax
+Plug 'pangloss/vim-javascript'
+
 call plug#end()
 
 set tabstop=4
@@ -41,6 +44,9 @@ set shiftwidth=4
 set expandtab
 set ai
 set number
+set scrolloff=15
+set sidescrolloff=15
+set mouse-=a
 
 set t_Co=256
 let base16colorspace=256
@@ -76,6 +82,9 @@ set laststatus=2
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+" Change buffer without writing
+set hidden
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -114,7 +123,7 @@ nnoremap <Leader>PC :PlugClean<CR>
 " Map custom keys for changing tabs
 nnoremap <Leader>m :bnext<cr>
 nnoremap <Leader>n :bprevious<cr>
-nnoremap <Leader>N :bp <BAR> bd #<CR>
+nnoremap <Leader>c :bp <BAR> bd #<CR>
 nnoremap <Leader>bl :ls<cr>
 
 " Default fzf layout
