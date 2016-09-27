@@ -36,3 +36,8 @@ if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.z
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias purge="sudo apt-get purge"
+alias add="sudo add-apt-repository"
+alias vim="nvim"
