@@ -30,6 +30,12 @@ Plug 'tomtom/tcomment_vim'
 
 " Vim Commentary
 Plug 'tpope/vim-commentary'
+
+" Auto pairs
+Plug 'jiangmiao/auto-pairs'
+
+" Vim JS
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 set tabstop=4
@@ -170,3 +176,5 @@ let g:airline_symbols.linenr = ''
 set noswapfile
 set nobackup
 set nowritebackup
+
+let g:javascript_plugin_jsdoc = 1
