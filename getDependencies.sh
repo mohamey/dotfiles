@@ -1,9 +1,13 @@
-packages="i3 i3blocks vim compton rofi feh arc-theme zsh thunar lxappearance moka-icon-theme python2.7 git python-pip python3-pip neovim"
+packages="i3 i3blocks compton rofi feh arc-theme zsh thunar lxappearance moka-icon-theme python2.7 git python-pip python3-pip neovim"
 
 # Arc Dark theme setup
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
 sudo apt-key add - < Release.key
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
+
+echo "Removing Release.key"
+rm -f Release.key
+echo "Done"
 
 # Moka icon theme
 sudo add-apt-repository ppa:moka/daily
