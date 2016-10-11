@@ -36,10 +36,13 @@ Plug 'jiangmiao/auto-pairs'
 
 " Vim JS
 Plug 'pangloss/vim-javascript'
+
+" Vim Surround
+Plug 'tpope/vim-surround'
 call plug#end()
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set ai
 set number
@@ -118,7 +121,7 @@ nnoremap <Leader>PC :PlugClean<CR>
 " Map custom keys for changing tabs
 nnoremap <Leader>m :bnext<cr>
 nnoremap <Leader>n :bprevious<cr>
-nnoremap <Leader>N :bp <BAR> bd #<CR>
+nnoremap <Leader>c :bp <BAR> bd #<CR>
 nnoremap <Leader>bl :ls<cr>
 
 " Default fzf layout
@@ -178,3 +181,9 @@ set nobackup
 set nowritebackup
 
 let g:javascript_plugin_jsdoc = 1
+
+" Change buffer without writing
+set hidden
+
+" Prevent mouse input
+set mouse-=a

@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # Use to restart wifi card if it doesn't work when waking from suspend
 
 sudo /etc/init.d/network-manager restart

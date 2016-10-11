@@ -39,5 +39,8 @@ fi
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
 alias purge="sudo apt-get purge"
+alias update="sudo apt-get update"
 alias add="sudo add-apt-repository"
 alias vim="nvim"
+alias yesod-docker-dev="stack --docker-run-args='--net=bridge --publish=3000:3000' exec -- yesod devel"
+alias netsoc-proxy="ssh -D 9000 -C -f -q -N ore0@netsoc.tcd.ie"
