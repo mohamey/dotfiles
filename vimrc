@@ -39,6 +39,9 @@ Plug 'pangloss/vim-javascript'
 
 " Vim Surround
 Plug 'tpope/vim-surround'
+
+" Haskell syntax highlighting
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
 
 set tabstop=2
@@ -187,3 +190,7 @@ set hidden
 
 " Prevent mouse input
 set mouse-=a
+
+" Haskell syntax stuff
+syntax on
+filetype plugin indent on
