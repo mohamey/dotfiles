@@ -1,4 +1,4 @@
-packages="i3 i3blocks vim compton rofi feh arc-theme zsh thunar lxappearance moka-icon-theme python2.7 git python-pip tlp tlp-rdw playerctl"
+packages="i3 i3blocks vim compton rofi feh arc-theme zsh thunar lxappearance moka-icon-theme python2.7 git python-pip tlp tlp-rdw playerctl emacs neovim"
 repos="ppa:moka/daily ppa:linrunner/tlp"
 
 # Arc Dark theme setup

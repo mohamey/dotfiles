@@ -8,7 +8,7 @@ dotfilesConfig=~/dotfiles/config-stuff
 configDir=~/.config
 olddir=~/dotfiles_old
 oldConfigDir=~/.oldConfigs
-files="vimrc zshrc zpreztorc vim"
+files="vimrc zshrc zpreztorc vim spacemacs"
 configFiles="gtk-2.0 gtk-3.0 i3 i3blocks.conf"
 
 # Create dotfiles_old in homedir
