@@ -42,6 +42,9 @@ Plug 'tpope/vim-surround'
 
 " Haskell syntax highlighting
 Plug 'neovimhaskell/haskell-vim'
+
+" Powerline
+Plug 'powerline/powerline'
 call plug#end()
 
 set tabstop=2
@@ -194,3 +197,6 @@ set mouse-=a
 " Haskell syntax stuff
 syntax on
 filetype plugin indent on
+
+" Set powerline for python3
+let g:powerline_pycmd = "py3"
